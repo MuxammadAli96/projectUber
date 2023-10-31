@@ -1,0 +1,280 @@
+@media (max-width:1199px) 
+    .advantages
+        &_item
+            margin-top: 30px
+            display: flex
+            flex-direction: column
+        &__descr-header
+            text-align: center
+    .uberMobile
+        &_card
+           width: 300px
+@media (max-width: 992px)   
+        .menu
+            &_item
+                border: none
+                text-align: center
+                
+            &_link
+                font-size: 12px     
+        .uberMobile_card
+            width: 230px
+        .subheader
+            .row
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 10px
+            &_phone
+                font-size: 18px
+            &_logo
+                img
+                    width: 100%
+        .footer
+            &_icons
+                display: flex
+                flex-wrap: wrap
+                margin-right: 40px
+            &_icon
+                margin-top: 10px
+            &_stores
+                flex-wrap: wrap
+                display: flex
+                align-items: center
+                justify-content: center
+            .image
+                margin: 10px 10px 0 0  
+@media (max-width: 768px)
+    .menu
+        padding: 0px
+        &_link
+            font-size: 10px
+        &_item
+            
+    .subheader
+        &_logo
+            margin-top: 10px
+        &_desc
+            font-size: 12px
+        &_btn
+            margin-top:12px
+        &_callDesc
+            margin-top: 15px 
+        &_btn
+
+    .promo
+        &_header
+            margin-top: 100px
+            font-size: 50px
+        &_subheader
+            font-size: 30px
+        &_descr
+            font-size: 15px
+        &_btn
+            width: 200px
+            height: 50px
+            font-size: 15px
+            line-height: 50px
+    .advantages
+        &_subheader
+            font-size: 16px
+            line-height: 25px
+    .uberMobile
+        &_subheader
+            font-size: 16px
+            line-height: 16px
+
+        &_card-title
+            font-size: 16px
+    .choice
+        padding-bottom: 10px 
+        max-height: 700px
+        height: 100%
+        &_item
+            .choice_text    
+                .choice_text-subheader
+                    font-size: 30px
+                .choice_text-descr
+                    font-size: 14px
+    .conditions
+        &_subheader
+            font-size: 30px
+    .world
+        min-height: 360px
+        height: 100%
+        padding-top: 36px
+    .footer
+        &_icons
+            margin-right: 0px
+            .footer_content
+                
+                &_nav
+                    min-width: 300px
+                    width: 100%
+                &_top
+                    display: flex
+                    flex-wrap: wrap
+                    a
+                        display: block
+                &_bottom
+                    
+                    max-width: 300px
+                    a
+                        margin-top: 10px
+
+@media (max-width: 576px)  
+    .button 
+        &:hover
+            background-image: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)       
+    nav
+        height: 40px
+        .hamburger
+            top: 50%
+            transform: translateY(-50%)
+            
+    .menu
+        position: fixed
+        width: 85%
+        left: -100%
+        height: 100vh
+        background-color: rgba(0, 0, 0, 0.8) 
+        padding: 50px 0 0 0     
+        transition: 0.6s
+        display: flex
+        flex-direction: column
+        
+        &_active
+            left: 0
+        &_link
+            font-size: 15px
+            line-height: 40px
+            display: block
+            margin: 20px 0
+        &_item
+            width: 100%
+    .subheader
+        top: 40px
+        .xs-hiden
+            display: none
+        .row
+            justify-content: space-around
+        &_desc
+            display: none
+        &_btn
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-top: 0px
+            width: 110px
+            height: 20px
+            font-size: 9px
+            line-height: 9px
+            margin: 0 auto
+        &_logo
+            margin-top: 0px
+        .xs-visible
+            font-size: 12px
+            margin: 0 auto
+            display: block
+    .promo
+        
+        &_header
+            font-size: 31px
+            line-height: 38px
+        &_subheader
+            font-size: 18px
+            line-height: 23px
+        &_descr
+            display: none
+    .choice
+        background: $blackColor
+        min-height: 400px 
+        &_text
+            &-subheader
+                display: none
+            &-descr
+                display: none
+        .choice_item
+            .uberCar_descr
+                color: $whiteColor
+    .conditions
+        padding: 10px 0px 0px 0px
+        &_subheader
+            font-size: 16px
+        &_item
+            display: flex
+            flex-direction: column
+            align-items: center
+        &_list
+            line-height: 15px
+            li
+                font-size: 14px
+    
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translate(-50%)
+        width: 20px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 2px
+        &_active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    transform: translateY(3px) rotate(45deg)
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(-45deg)
+    .world
+        &_subheader
+            font-size: 20px
+        &_desc
+            font-size: 15px
+    .footer
+        display: flex
+        flex-direction: column  
+        div
+            width: 100%
+        &_icons
+            justify-content: center
+            align-items: center
+            padding: 0px 10px
+            .footer_icon
+                margin-right: 10px
+        &_stores
+            margin: 0px
+        .footer_content
+            &_nav
+                min-width: 280px
+                width: 100%
+            &_top
+            
+            &_bottom
+               
+                
+        .content
+            order: 1   
+        .icons
+            order: 2
+        .stores
+            order: 3
+        
+       
+            
+            
+           
+         
+          
+               
+
+       
+           
+
+

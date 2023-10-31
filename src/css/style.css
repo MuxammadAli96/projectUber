@@ -1,0 +1,223 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    background-color: #212121;
+    min-height: 50px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 0;
+}
+.menu .menu_item .menu_link{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 15px;
+    list-style-type: none;
+    text-decoration: none;
+}
+.menu .menu_item{
+    border-right: 2px dotted black;
+    padding-right: 30px;
+}
+.menu .menu_item:last-of-type {
+    border: none;
+}
+.subheader{
+    min-height: 87px;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.subheader .subheader_logo{
+    display: block;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.subheader_desc{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 100;
+    opacity: 0.5;
+}
+.subheader_callDesc{
+    color: #FFF;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 14px;
+    margin-top: 25px;
+    
+}
+.subheader_phone{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+}
+
+.subheader_btn{
+    border-radius: 4px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px; /* 328.571% */
+    text-transform: uppercase;
+    width: 172px;
+    height: 46px;
+    border:none;
+    margin-top: 22px;
+}
+.promo{
+    background: url(../img/uber_bg.png) center center/cover no-repeat;
+    min-height: 800px;
+    position: relative;
+}
+.promo .promo_header{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+.promo .promo_subheader{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 18px;
+}
+.promo .promo_descr{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+.promo .promo_btn{
+    display: flex;
+    width: 259px;
+    height: 63px;
+    font-size: 18px;
+    line-height: 60px;
+    margin: 115px auto 0 auto;
+    justify-content: center;
+
+}
+
+.advantages_header{
+    color: #FFF;
+    background-color: black;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px; /* 100% */
+    text-transform: uppercase;
+    min-width: 113px;
+    min-height: 25px;
+}
+.advantages .advantages_header{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 113px;
+    height: 24px;
+    margin: 20px auto 0 auto;
+}
+
+.advantages .advantages_subheader{
+    color: #222;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-top: 33px;
+}
+.advantages .advantages_wraper{
+    margin-top: 20px;
+    height: 767px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.advantages .advantages_item{
+    width: 512px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.advantages__descr-header{
+    color: #1EACC7;
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.advantages_text{
+    max-width: 343px;
+    min-height: 150px;
+}
+
+.advantages__descr-header{
+    color: #1EACC7;
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 21px;
+}
+.advantages_descr{
+    display: inline-block;
+    margin-top: 10px;
+    color: black;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.advantages_round{
+    width: 116px;
+    height: 116px;
+    background-color:#1EACC7;
+    border-radius:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,445 @@
+nav 
+	background-color: #212121
+	max-height: 50px
+	height: 100% 
+	position: fixed
+	z-index: 3
+	width: 100%
+	
+.menu 
+	display: flex 
+	align-items: center 
+	justify-content: center
+	height: 50px 
+	margin-bottom: 0 
+	justify-content: space-around
+	&_item 
+		border-right: 2px dotted black 
+		padding: 0px 20px 0 0  
+		list-style-type: none
+		
+		&:last-of-type 
+			border-right: none 
+	
+	&_link 
+		color: #FFF 
+		font-family: Roboto 
+		font-size: 15px 
+		font-style: normal 
+		font-weight: 300 
+		line-height: 15px 
+		list-style-type: none 
+		text-decoration: none 
+	
+.subheader 
+	max-height: 87px
+	height: 100% 
+	background-color: rgba(0, 0, 0, 0.6) 
+	position: absolute 
+	z-index: 2 
+	width: 100%
+	top: 50px
+	padding-bottom: 10px
+	display: flex
+	justify-content: center
+	align-items: center
+	.row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		
+	&_logo 
+		display: block 
+		width: 100% 
+		
+	&_desc 
+		color: #FFF 
+		font-family: Roboto 
+		font-size: 13px 
+		font-weight: 100 
+		opacity: 0.5 
+	&_callDesc 
+		color: #FFF 
+		text-align: right 
+		font-family: Roboto 
+		font-size: 12px 
+		font-style: normal 
+		font-weight: 300 
+		line-height: 14px 
+	&_phone 
+		color: #FFF 
+		text-align: center 
+		font-family: Roboto 
+		font-size: 22px 
+		font-weight: 400 
+		text-transform: uppercase 
+		text-decoration: none 
+		display: flex 
+		justify-content: end 
+	&_btn 
+		width: 172px 
+		height: 46px 
+		@include button
+	.xs-visible
+		display: none
+	
+.promo 
+	background: url(../img/uber_bg.png) center center/cover no-repeat 
+	max-height: 800px 
+	height: 100%
+	padding: 100px 0 135px 0
+	&_header 
+		color: #FFF 
+		text-align: center 
+		font-family: Roboto 
+		font-size: 60px 
+		font-style: normal 
+		font-weight: 900 
+		line-height: 65px 
+		text-transform: uppercase 
+		margin-top: 80px 
+	&_subheader 
+		color: #FFF 
+		font-family: Roboto 
+		font-size: 36px 
+		font-style: normal 
+		font-weight: 700 
+		line-height: 48px 
+		text-transform: uppercase 
+		text-align: center 
+		margin-top: 18px 
+	&_descr 
+		color: #FFF 
+		text-align: center 
+		font-family: Roboto 
+		font-size: 18px 
+		font-style: normal 
+		font-weight: 400 
+		line-height: 24px 
+	&_btn 
+		@include button
+		display: flex 
+		width: 259px 
+		height: 63px 
+		font-size: 18px 
+		line-height: 60px 
+		margin: 40px auto 0 auto 
+		justify-content: center 
+		
+
+.advantages
+	min-height: 767px
+	padding: 20px 0 50px 0
+	&_subheader 
+		color: #222 
+		@include subheader
+		margin-top: 33px 
+	&_wraper 	
+		min-height: 767px 
+		display: flex 
+		flex-wrap: wrap 
+		justify-content: space-around 
+	&_item 
+		max-width: 512px
+		display: flex 
+		justify-content: space-between 
+		align-items: center 
+	&__descr-header 
+		color: #1EACC7 
+		font-family: Roboto 
+		line-height: 21px 
+		font-size: 17px 
+		line-height: 21px 
+	&_text 
+		max-width: 343px 
+		min-height: 150px 
+	&_descr 
+		display: inline-block 
+		margin-top: 10px 
+		color: black 
+		font-family: Roboto 
+		font-size: 15px 
+		font-weight: 300 
+		line-height: 21px 
+	&_round 
+		width: 116px 
+		height: 116px 
+		background-color: #1EACC7 
+		border-radius: 100% 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		margin-right: 25px 
+
+.uberMobile
+	min-height: 846px
+	padding: 48px 0 79px 0
+	background: url('../img/mobile_bg.png')
+	.row
+		margin-top: 30px	
+	&_subheader
+		color: #222 
+		@include subheader
+		margin-top: 30px
+	&_descr
+		color: #222 
+		text-align: center 
+		font-family: Roboto 
+		font-size: 17px 
+		font-style: normal 
+		font-weight: 400 
+		line-height: 21px 
+	&_card
+		width: 320px
+		height: 280px
+		margin: 10px auto
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		background: url('../img/OneClick.png') center (center/cover) no-repeat
+		&_1
+			background: url('../img/feedback.png') center (center/cover) no-repeat
+		&_2
+			background: url('../img/hope.png') center (center/cover) no-repeat
+		&_3
+			background: url('../img/transparentPrices.png') center (center/cover) no-repeat
+		&_4
+			background: url('../img/cashlessPayment.png') center (center/cover) no-repeat
+		&_5
+			background: url('../img/feedback.png') center (center/cover) no-repeat
+		&_6
+			background: url('../img/costOfTrip.png') center (center/cover) no-repeat
+		&-title
+			color: #FFF 
+			text-align: center 
+			font-family: Roboto 
+			font-size: 24px 
+			font-style: normal 
+			font-weight: 400 
+			line-height: 31px 
+			text-transform: uppercase 
+			margin-top: 30px
+		&_plus
+			position: relative
+			background-color: #000
+			width: 29px
+			height: 29px
+			border-radius: 100%	
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0 auto
+			cursor: pointer
+			&:before
+				content:''
+				position: absolute
+				width: 2px
+				height: 14px
+				background-color: $blueColor
+			&:after
+				content:''
+				width: 14px
+				height: 2px
+				background-color: $blueColor
+			&:hover
+				&:before, &:after
+					background-color: $redColor
+
+.choice
+	min-height: 900px
+	padding: 59px 0 137px 0
+	background: linear-gradient(to bottom, black 55% ,white 50% )
+	.choice_item
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		align-items: center
+		.choice_text
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			&-header
+				background-color: white
+				color: black
+			&-subheader
+				color: #FFF
+				@include subheader
+				margin-top: 27px
+			&-descr
+				color: #FFF
+				text-align: center
+				font-family: Roboto
+				font-size: 17px
+				font-style: normal
+				font-weight: 300
+				line-height: 21px 
+				margin-top: 10px
+		.uberCar
+			margin-top: 54px 
+			max-width: 759px
+			width: 100%
+		.uberCar_descr
+			color: #222
+			text-align: center
+			font-family: Roboto
+			font-size: 17px
+			font-style: normal
+			font-weight: 300
+			line-height: 24px 
+			max-width: 327px
+.tablet
+	@include tablet
+.conditions
+	min-height: 917px
+	padding: 68px 0 90px 0
+	&_subheader
+		@include subheader
+		margin-top: 30px 
+	&_item
+		margin: 30px 0
+	&_title
+		color: $blueColor
+	&_list
+		list-style: none
+		line-height: 30px
+		li
+			position: relative
+			&:before
+				content:''
+				display: block
+				position: absolute
+				left: -20px
+				top: 50%
+				transform: translateY(-50%)
+				width: 14px
+				height: 14px
+				background: url('../icons/check_blue.png') center (center / cover) no-repeat
+	&_bonus
+		color: $blueColor
+	.warning
+		.conditions_title
+			color: $redColor
+		li
+			&:before
+				background: url('../icons/check_red.png') center (center / cover) no-repeat
+
+.world
+	background: url('../img/world_bg.png')
+	min-height: 716px
+	padding: 48px 0 28px 0 
+	display: flex
+	&_header
+		width: 75px
+		background-color: $whiteColor 
+		color: $blackColor
+	&_subheader
+		color: $whiteColor
+		@include subheader
+		margin-top: 26px
+	&_desc
+		color: #FFF
+		text-align: center
+		font-family: Roboto
+		font-size: 17px
+		font-style: normal
+		font-weight: 300
+		line-height: 21px 
+	&_content
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+	&_link
+		text-decoration: none
+		text-transform: uppercase
+		color: $blueColor
+.footer
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 20px 0 37px 0
+	min-height: 155px
+	&_icons
+		display: flex
+		.footer_icon
+			display: flex
+			justify-content: center
+			align-items: center
+			font-size: 20px
+			background-color: $blackColor
+			width: 35px
+			height: 35px
+			border-radius: 100%
+			list-style-type: none
+			margin-right: 20px
+			color: $whiteColor
+			text-decoration: none
+	&_line
+		content:''
+		max-width: 300px
+		width: 100%
+		height: 4px
+		background-color: $blueColor
+		border-radius: 30px
+		margin: 9px auto
+		
+	.footer_content
+		display: flex
+		flex-direction: column
+		align-items: center
+		&_top
+			display: flex
+			justify-content: center
+			list-style-type: none
+			flex-wrap: wrap
+			padding: 0 10px
+			justify-content: space-around	
+			a
+				color: #070716
+				font-family: Roboto
+				font-size: 15px
+				font-style: normal
+				font-weight: 300
+				text-transform: uppercase
+				text-decoration: none
+				white-space: nowrap
+		&_bottom
+			display: flex
+			justify-content: space-around
+			list-style-type: none
+			max-width: 390px
+			padding: 0px 10px 
+			flex-wrap: wrap
+			margin: 0 auto
+			a
+				color: #999
+				font-family: Roboto
+				font-size: 11px
+				font-style: normal
+				font-weight: 300
+				text-transform: uppercase
+				text-decoration: none
+				white-space: nowrap
+
+		&_nav
+			margin-top: 30px
+		&_lang
+			display: block
+			text-align: center
+			cursor: pointer
+			text-decoration: none
+			color: $blueColor
+			text-transform: uppercase
+		
+	&_stores
+		margin-right: 30px
+.footer > div 
+	width: 33%
+	&:nth-child(3)
+		display: flex 
+		justify-content: flex-end
+	
+.image
+	height: 27px
+
